@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NORTE BARBER: proyecto de demostración de una web para barbería, realizado con HTML y CSS.">
+  <title>NORTE BARBER | Barbería de estilo clásico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <header class="cabecera">
+    <div class="contenedor barra-navegacion">
+      <a class="marca" href="#inicio" aria-label="Norte Barber, ir al inicio">NORTE<span>BARBER</span><span class="marca-punto">.</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#horario">Horario</a>
+        <a class="enlace-reserva" href="#contacto">Contacto ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  
+    <section class="portada" id="inicio">
+      <div class="contenedor portada-grid">
+        <div class="portada-texto">
+          <p class="etiqueta"><span class="linea-corta"></span> BARBERÍA · ESTILO Y PRECISIÓN</p>
+          <h1>Un buen corte.<br><em>Sin complicaciones.</em></h1>
+          <p class="introduccion">Cortes cuidados, barba impecable y atención a cada detalle. Tu estilo, a tu manera.</p>
+          <div class="botones">
+            <a class="boton boton-blanco" href="#servicios">Ver servicios <span aria-hidden="true">↗</span></a>
+            <a class="boton boton-contorno" href="#contacto">Contactar</a>
+          </div>
+          <div class="datos-portada"><span>EST. 2026</span><span>TOLEDO · ESPAÑA</span><span>ESTILO ATEMPORAL</span></div>
+        </div>
+        <div class="portada-arte" aria-hidden="true">
+          <div class="circulo-exterior"><div class="circulo-interior"><img src="assets/tijeras.svg" alt=""></div></div>
+          <span class="arte-texto arte-arriba">BUEN ESTILO</span>
+          <span class="arte-texto arte-abajo">BUENOS DETALLES</span>
+          <span class="arte-numero">01 / 03</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion servicios" id="servicios">
+      <div class="contenedor">
+        <div class="encabezado-seccion"><div><p class="etiqueta etiqueta-oscura">01 — LO QUE HACEMOS</p><h2>Servicios <span class="letra-suave">& precios</span></h2></div><p>Lo esencial, hecho con precisión.<br>Sin prisas y sin complicaciones.</p></div>
+        <div class="servicios-grid">
+          <article class="tarjeta-servicio"><span class="numero-servicio">01</span><div><h3>Corte clásico</h3><p>Un corte a tu estilo, con acabado limpio y cuidado.</p></div><strong>15 €</strong></article>
+          <article class="tarjeta-servicio"><span class="numero-servicio">02</span><div><h3>Arreglo de barba</h3><p>Perfilado y arreglo para una barba bien definida.</p></div><strong>10 €</strong></article>
+          <article class="tarjeta-servicio"><span class="numero-servicio">03</span><div><h3>Corte + barba</h3><p>La combinación perfecta para renovar tu imagen.</p></div><strong>22 €</strong></article>
+          <article class="tarjeta-servicio"><span class="numero-servicio">04</span><div><h3>Degradado</h3><p>Degradado preciso con un acabado moderno.</p></div><strong>17 €</strong></article>
+        </div>
+        <p class="nota">* Precios ficticios utilizados únicamente para este proyecto de demostración.</p>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="seccion nosotros" id="nosotros">
+      <div class="contenedor nosotros-grid">
+        <div class="panel-decorativo" aria-hidden="true"><span class="panel-simbolo">N<span>·</span>B</span><span class="panel-pie">THE ART OF A GOOD CUT</span></div>
+        <div class="nosotros-texto"><p class="etiqueta etiqueta-oscura">02 — NUESTRA FILOSOFÍA</p><h2>Menos ruido.<br><span class="letra-suave">Más estilo.</span></h2><p>En NORTE BARBER creemos que un buen corte no necesita artificios. Nos centramos en lo importante: escuchar, cuidar los detalles y conseguir un resultado con el que te sientas cómodo.</p><p>Un espacio sencillo, un trato cercano y una forma de trabajar que pone la calidad por delante de las prisas.</p><a class="enlace-texto" href="#contacto">Ven a conocernos <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <!-- HORARIO -->
+    <section class="seccion horario" id="horario">
+      <div class="contenedor horario-grid"><div><p class="etiqueta">03 — CUÁNDO ENCONTRARNOS</p><h2>Tu momento.<br><span class="texto-gris">Nuestro horario.</span></h2></div><div class="horario-tabla"><div><span>Lunes – Viernes</span><strong>10:00 – 14:00 / 16:00 – 20:00</strong></div><div><span>Sábados</span><strong>10:00 – 14:00</strong></div><div><span>Domingos</span><strong>Cerrado</strong></div><p>Horario de ejemplo de un negocio ficticio.</p></div></div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion contacto" id="contacto"><div class="contenedor contacto-grid"><div><p class="etiqueta etiqueta-oscura">04 — HABLEMOS</p><h2>¿Listo para<br><span class="letra-suave">un cambio?</span></h2><p>Este sitio es una demostración de portfolio. No representa una barbería real ni permite realizar reservas.</p></div><div class="contacto-tarjeta"><span class="contacto-etiqueta">PROYECTO DE DEMOSTRACIÓN</span><h3>Una web sencilla.<br>Una buena primera impresión.</h3><p>Diseñada con HTML5 y CSS3 para mostrar estructura, estilo visual y adaptación a diferentes pantallas.</p><a href="#inicio" class="boton boton-oscuro">Volver al inicio ↑</a></div></div></section>
+  </main>
+  <footer class="pie"><div class="contenedor pie-contenido"><a class="marca" href="#inicio">NORTE<span>BARBER</span><span class="marca-punto">.</span></a><p>Proyecto académico/personal ficticio · HTML + CSS</p><span>© 2026 NORTE BARBER</span></div></footer>
+</body>
+</html>
